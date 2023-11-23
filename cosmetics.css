@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'EB Garamond', serif;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    background: rgba(255, 182, 193, 0.488);
+    box-shadow: 0 2px 5px 0 #7b5d9c;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.navbar a:hover {
+    background: transparent;
+    color: #FFBEAA;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 10px 18px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.logo h1{
+    font-size: 40px;
+    color: #2F0D32;
+    font-style: oblique;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    font-size: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+}
+nav ul a:hover{
+    color: #E75F61;
+    text-shadow: 0 10px 0 10px #FFBEAA;
+}
+#page-header{
+    background: url(/images/b5.jpg);
+    width: 100;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h1,
+#page-header p{
+    color: #c099d3;
+    font-size: 30px;
+}
+.wishlist{
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 17px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    display: flex;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+footer a:hover{
+    color: #E75F61;
+}
